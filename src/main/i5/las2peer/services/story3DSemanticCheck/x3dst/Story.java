@@ -318,7 +318,11 @@ public class Story extends Model {
 			System.out.println(num+" "+ upperCut);
 			if (num == 0 && upperCut.length() > 0) {
 				this.error = SemanticCheckResponse.error(Story.ERROR_DEAD_END, n.getId(), null, "There is a dead end");
-				return false;					
+				return false;
+			}
+			if (num > 0 && upperCut.length() == 0) {
+				this.error = SemanticCheckResponse.error(Story.ERROR_INVALID_TRANSITION, n.getId(), null, "TIllegal transition");
+				return false;
 			}
 		}
 		
