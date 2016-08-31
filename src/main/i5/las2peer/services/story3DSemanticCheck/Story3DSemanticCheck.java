@@ -23,9 +23,9 @@ import io.swagger.annotations.License;
 import io.swagger.annotations.SwaggerDefinition;;
 
 @Path("/3DST")
-@Version("0.1") // this annotation is used by the XML mapper
+@Version("1.0") // this annotation is used by the XML mapper
 @Api
-@SwaggerDefinition(info = @Info(title = "LAS2peer Template Service", version = "0.1", description = "A LAS2peer Template Service for demonstration purposes.", termsOfService = "http://your-terms-of-service-url.com", contact = @Contact(name = "John Doe", url = "provider.com", email = "john.doe@provider.com"), license = @License(name = "your software license name", url = "http://your-software-license-url.com")))
+@SwaggerDefinition(info = @Info(title = "3D Storytelling Semantic Check", version = "1.0", description = "Semantic check service for 3D Storytelling", termsOfService = "http://your-terms-of-service-url.com", contact = @Contact(name = "Jan Benscheid", url = "", email = "benscheid@dbis.rwth-aachen.com"), license = @License(name = "", url = "")))
 
 // TODO Your own Serviceclass
 public class Story3DSemanticCheck extends Service {
